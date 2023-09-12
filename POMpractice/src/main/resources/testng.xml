@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ActiTime application Automation test suite">
+
+<listeners>
+		<listener
+			class-name="com.actiTime.ExtentReportListener.ExtentReportListener" />
+	</listeners>
+
+	<listeners>
+		<listener
+			class-name="com.actiTime.ExtentReportListener.CustomizedReportListener" />
+	</listeners>
+	
+	<test name="ActiTime test cases">
+		<classes>
+			<class name="com.ActiTime.tests.LoginpageTest" />
+<!--		<class name="com.ActiTime.tests.HomepageTest" />
+  			<class name="com.ActiTime.tests.DetailpageTest" />
+			<class name="com.ActiTime.tests.ReportedpageTest" />
+			<class name="com.ActiTime.tests.AssignedpageTest" />
+			<class name="com.ActiTime.tests.ManagerspageTest" />
+			<class name="com.ActiTime.tests.ActionspageTest" />
+-->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
